@@ -21,7 +21,7 @@
 
 	this.keyCodeToKeyDown.fill(0x3FF);
 	this.keyCodeToKeyDown[65]  = 1022; //1111111110 A
-	this.keyCodeToKeyDown[83]  = 1021; //1111111101 B
+	this.keyCodeToKeyDown[88]  = 1021; //1111111101 B
 	this.keyCodeToKeyDown[191] = 1019; //1111111011 select
 	this.keyCodeToKeyDown[13]  = 1015; //1111110111 start
 	this.keyCodeToKeyDown[39]  = 1007; //1111101111 right
@@ -33,7 +33,7 @@
 
 	this.keyCodeToKeyUp.fill(0);
 	this.keyCodeToKeyUp[65]  = ~1022;
-	this.keyCodeToKeyUp[83]  = ~1021;
+	this.keyCodeToKeyUp[88]  = ~1021;
 	this.keyCodeToKeyUp[191] = ~1019;
 	this.keyCodeToKeyUp[13]  = ~1015; 
 	this.keyCodeToKeyUp[39]  = ~1007;
