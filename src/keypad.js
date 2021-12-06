@@ -20,27 +20,27 @@
 	//0000001111111111 - 0x3FF, default state
 
 	this.keyCodeToKeyDown.fill(0x3FF);
-	this.keyCodeToKeyDown[65]  = 1022; //1111111110 A
+	this.keyCodeToKeyDown[67]  = 1022; //1111111110 A
 	this.keyCodeToKeyDown[88]  = 1021; //1111111101 B
-	this.keyCodeToKeyDown[191] = 1019; //1111111011 select
+	this.keyCodeToKeyDown[16] = 1019; //1111111011 select
 	this.keyCodeToKeyDown[13]  = 1015; //1111110111 start
 	this.keyCodeToKeyDown[39]  = 1007; //1111101111 right
 	this.keyCodeToKeyDown[37]  = 991;  //1111011111 left
 	this.keyCodeToKeyDown[38]  = 959;  //1110111111 up 
 	this.keyCodeToKeyDown[40]  = 895;  //1101111111 down
-	this.keyCodeToKeyDown[76]  = 767;  //1011111111 r
+	this.keyCodeToKeyDown[86]  = 767;  //1011111111 r
 	this.keyCodeToKeyDown[90]  = 511;  //0111111111 l
 
 	this.keyCodeToKeyUp.fill(0);
-	this.keyCodeToKeyUp[65]  = ~1022;
+	this.keyCodeToKeyUp[67]  = ~1022;
 	this.keyCodeToKeyUp[88]  = ~1021;
-	this.keyCodeToKeyUp[191] = ~1019;
+	this.keyCodeToKeyUp[16] = ~1019;
 	this.keyCodeToKeyUp[13]  = ~1015; 
 	this.keyCodeToKeyUp[39]  = ~1007;
 	this.keyCodeToKeyUp[37]  = ~991;
 	this.keyCodeToKeyUp[38]  = ~959;
 	this.keyCodeToKeyUp[40]  = ~895;
-	this.keyCodeToKeyUp[76]  = ~767;
+	this.keyCodeToKeyUp[86]  = ~767;
 	this.keyCodeToKeyUp[90]  = ~511;
 
 	this.ioregMem16[0x98] = 0x3FF; //fill KEYINPUT with all 1s i.e. no buttons pressed
