@@ -29,7 +29,7 @@
 	this.keyCodeToKeyDown[38]  = 959;  //1110111111 up 
 	this.keyCodeToKeyDown[40]  = 895;  //1101111111 down
 	this.keyCodeToKeyDown[76]  = 767;  //1011111111 r
-	this.keyCodeToKeyDown[75]  = 511;  //0111111111 l
+	this.keyCodeToKeyDown[90]  = 511;  //0111111111 l
 
 	this.keyCodeToKeyUp.fill(0);
 	this.keyCodeToKeyUp[65]  = ~1022;
@@ -41,7 +41,7 @@
 	this.keyCodeToKeyUp[38]  = ~959;
 	this.keyCodeToKeyUp[40]  = ~895;
 	this.keyCodeToKeyUp[76]  = ~767;
-	this.keyCodeToKeyUp[75]  = ~511;
+	this.keyCodeToKeyUp[90]  = ~511;
 
 	this.ioregMem16[0x98] = 0x3FF; //fill KEYINPUT with all 1s i.e. no buttons pressed
 
